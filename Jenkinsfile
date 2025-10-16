@@ -18,7 +18,7 @@ pipeline {
 
             steps {
 
-                echo 'Building the project...,,,'
+                sh echo 'Building the project...,,,'
 
             }
 
@@ -28,7 +28,7 @@ pipeline {
 
             steps {
 
-                echo 'Running tests...'
+                sh echo 'Running tests...'
 
             }
 
@@ -38,7 +38,7 @@ pipeline {
 
             steps {
 
-                echo 'Deploying...'
+                sh echo 'Deploying...'
 
             }
 
