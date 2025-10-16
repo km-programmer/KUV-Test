@@ -3,7 +3,7 @@ pipeline {
   options { ansiColor('xterm'); timestamps() }
 
   stages {
-      stage('Clone')
+      stage('Clone'){
       steps {
     git branch: 'main' ,  url: "https://github.com/km-programmer/KUV-Test.git"
   }
