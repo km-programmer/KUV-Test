@@ -3,7 +3,13 @@ pipeline {
   options { ansiColor('xterm'); timestamps() }
 
   stages {
-    stage('Hello') {
+      stage('Clone')
+      steps {
+    git branch: 'main' ,  url: "https://github.com/km-programmer/KUV-Test.git"
+  }
+  }
+    stage('Hello')
+    {
       steps {
         echo 'Starting build…'
       }
